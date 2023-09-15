@@ -1,4 +1,8 @@
 @import './reset';
 @import './fonts';
-@import "./styles";
+@import './vars';
+@import './mixins';
+@import './styles';
+@import './UI/header';
+@import './UI/main-nav';
 @import './media';
