@@ -1,5 +1,9 @@
 .header {
   width: 100%;
+  padding: 0px 32px;
+  @media (max-width: 768px) {
+    padding: 0px 24px;
+  }
   &__wrapper {
     padding-top: 49px;
     padding-bottom: 40px;
