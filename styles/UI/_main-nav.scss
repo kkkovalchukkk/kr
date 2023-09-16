@@ -5,6 +5,10 @@
   border-radius: 24px;
   background: var(--white, #fff);
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 1024px) {
+    padding: 0px 32px;
+  }
 }
 .main-nav-list {
   width: 100%;

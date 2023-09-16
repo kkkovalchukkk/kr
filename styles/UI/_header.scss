@@ -1,9 +1,7 @@
 .header {
   width: 100%;
-  padding: 0px 32px;
-  @media (max-width: 768px) {
-    padding: 0px 24px;
-  }
+  padding: 0px 16px;
+
   &__wrapper {
     padding-top: 49px;
     padding-bottom: 40px;
@@ -112,5 +110,60 @@
       color: $orange;
     }
     @include click();
+  }
+
+  @media (max-width: 1575px) {
+    &__wrapper {
+      gap: 16px;
+      justify-content: space-between;
+    }
+    &__logo-body {
+      max-width: 197px;
+    }
+
+    &__company-info,
+    &__logo-link,
+    &__tel-group {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &__tel-group {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1096px) {
+    &__company-info {
+      gap: 13px;
+    }
+    &__company-time,
+    &__address {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.16px;
+      padding-left: 28px;
+    }
+    &__btn {
+      padding: 16px 32px 16px 64px;
+      background-image: url('../../assets/svg/tel-icon.svg');
+      background-size: 16px;
+      background-position: left 32px center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0px 32px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 24px;
   }
 }

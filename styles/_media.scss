@@ -1,0 +1,18 @@
+@media (max-width: 1024px) {
+  .win-section__btn,
+  .reviews-section__btn,
+  .team-section__btn,
+  .materials-section__btn {
+    display: none;
+  }
+  .swiper-navigation {
+    margin-right: 0;
+  }
+  .win-section__mobile-btn,
+  .reviews-section__mobile-btn,
+  .team-section__mobile-btn,
+  .materials-section__mobile-btn {
+    display: initial;
+    margin-top: 32px;
+  }
+}
