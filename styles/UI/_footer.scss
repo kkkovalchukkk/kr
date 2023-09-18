@@ -278,11 +278,16 @@
     &__middle-footer-col--nav {
       order: none;
     }
+
+    &__bottom-footer-wrapper,
+    &__legal {
+      flex-wrap: wrap;
+    }
   }
 
   @media (max-width: 1024px) {
     padding: 0px 32px;
-    padding-top: 64px;
+    padding-top: 47px;
     padding-bottom: 48px;
 
     &__middle-footer-wrapper {
