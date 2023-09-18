@@ -112,6 +112,10 @@
     @include click();
   }
 
+  &__burger-btn {
+    display: none;
+  }
+
   @media (max-width: 1575px) {
     &__wrapper {
       gap: 16px;
@@ -176,7 +180,74 @@
     }
   }
 
+  @media (max-width: 1023px) {
+    margin-bottom: 10px;
+    padding: 0;
+    &__wrapper {
+      border-radius: 0;
+    }
+  }
+
+  @media (max-width: 910px) {
+    &__logo-link {
+      margin-right: auto;
+    }
+
+    &__company-info {
+      display: none;
+    }
+
+    &__burger-btn {
+      display: initial;
+      margin-left: 16px;
+      border: none;
+      background: none;
+      padding: 0;
+    }
+  }
+
   @media (max-width: 768px) {
-    padding: 0px 24px;
+    &__wrapper {
+      padding: 29px 24px;
+    }
+    &__logo-image {
+      width: 49px;
+      height: 46px;
+    }
+    &__logo-company {
+      max-width: 142px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.14px;
+    }
+    &__logo-text {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.12px;
+    }
+    &__btn {
+      padding: 12px 24px 12px 52px;
+      background-size: 16px;
+      background-position: left 24px center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.14px;
+      text-transform: uppercase;
+    }
+    &__burger-btn {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 568px) {
+    &__wrapper {
+      padding: 19px 20px;
+    }
   }
 }

@@ -5,6 +5,13 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 10px;
+  @media (max-width: 768px) {
+    row-gap: 6px;
+  }
+
+  @media (max-width: 625px) {
+    grid-template-columns: 1fr;
+  }
 }
 .accordeon {
   width: 100%;
@@ -21,6 +28,12 @@
 
     .accordeon__content {
       margin-top: 33px;
+      @media (max-width: 960px) {
+        margin-top: 24px;
+      }
+      @media (max-width: 568px) {
+        margin-top: 20px;
+      }
     }
     .accordeon__chevron {
       transform: rotate(180deg);
@@ -78,5 +91,34 @@
 
   @media (max-width: 1024px) {
     padding-top: 13px;
+  }
+
+  @media (max-width: 960px) {
+    padding: 16px 24px;
+    &--active {
+      padding-bottom: 32px;
+    }
+    &__heading-icon {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__heading {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 17.6px */
+      letter-spacing: -0.16px;
+    }
+    &__chevron {
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  @media (max-width: 568px) {
+    padding: 12px 20px;
   }
 }

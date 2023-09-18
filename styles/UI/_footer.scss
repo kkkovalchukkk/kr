@@ -305,7 +305,36 @@
       margin-bottom: 12px;
     }
   }
+
+  @media (max-width: 960px) {
+    &__btn {
+      top: 56px;
+    }
+    &__info {
+      margin: 0;
+    }
+    &__middle-footer-wrapper {
+      column-gap: 32px;
+      row-gap: 96px;
+    }
+
+    &__middle-footer-col {
+      &--info {
+        order: 6;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 32px;
+      }
+      &--tels {
+        order: 7;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
-    padding: 0px 24px;
+    &__top-footer {
+      margin-bottom: 96px;
+    }
   }
 }
