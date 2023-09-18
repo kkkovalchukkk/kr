@@ -2561,6 +2561,10 @@ input[type=checkbox]:checked + .form__checkbox {
   color: #13151c;
   transition: 0.23s;
 }
+.form__input.invalid {
+  border: 1px solid red;
+  box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.2901960784);
+}
 .form__input:focus {
   outline: none;
   border: 1px solid #ee4b28;
@@ -2580,6 +2584,10 @@ input[type=checkbox]:checked + .form__checkbox {
   align-items: center;
   gap: 10.62px;
 }
+input[type=checkbox].invalid + .form__checkbox {
+  border: 1px solid red;
+  box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.2901960784);
+}
 .form__checkbox {
   width: 21.24px;
   height: 21.24px;
@@ -2590,6 +2598,7 @@ input[type=checkbox]:checked + .form__checkbox {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: 0.23s;
 }
 .form__label-text {
   color: #999999;
