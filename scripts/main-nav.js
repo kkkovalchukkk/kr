@@ -13,12 +13,12 @@ window.addEventListener('DOMContentLoaded', () => {
       subMenu.style.maxHeight = subMenu.scrollHeight + 'px';
     });
 
-    item.addEventListener('mouseleave', () => {
-      mainNav.classList.remove('main-nav--non-rounded');
-      const subMenu = item.querySelector('.main-nav-list-item__submenu');
-      item.classList.remove('main-nav-list-item--active');
-      subMenu.style.maxHeight = '0px';
-    });
+    // item.addEventListener('mouseleave', () => {
+    //   mainNav.classList.remove('main-nav--non-rounded');
+    //   const subMenu = item.querySelector('.main-nav-list-item__submenu');
+    //   item.classList.remove('main-nav-list-item--active');
+    //   subMenu.style.maxHeight = '0px';
+    // });
 
     item.addEventListener('click', () => {
       if (item.classList.contains('main-nav-list-item--active')) {
