@@ -23,6 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    if (telInput.value.length != 18) {
+      telInput.classList.add('invalid');
+    } else {
+      telInput.classList.remove('invalid');
+    }
+
     if (
       [nameInput, telInput, checkBoxInput].some((input) =>
         input.classList.contains('invalid')
