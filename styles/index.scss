@@ -1,8 +1,13 @@
+// utils
+
 @import './reset';
 @import './fonts';
 @import './vars';
 @import './mixins';
 @import './styles';
+
+// ui
+
 @import './UI/header';
 @import './UI/main-nav';
 @import './UI/footer';
@@ -10,4 +15,12 @@
 @import './UI/accordeon';
 @import './UI/mobile-menu';
 @import './UI/popup';
+@import './UI/breadcrumbs';
+
+// pages
+
+@import './faq';
+
+// media
+
 @import './media';
