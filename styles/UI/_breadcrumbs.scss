@@ -34,4 +34,23 @@
       letter-spacing: -0.14px;
     }
   }
+
+  @media (max-width: 375px) {
+    gap: 4px;
+    &__link {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 14.4px */
+      letter-spacing: -0.12px;
+      &--current {
+        padding-left: 10px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 14.4px */
+        letter-spacing: -0.12px;
+      }
+    }
+  }
 }

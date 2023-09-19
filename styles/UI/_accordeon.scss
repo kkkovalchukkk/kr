@@ -167,5 +167,23 @@
     &__list {
       gap: 14px;
     }
+    &__bullet-list {
+      padding-left: 2px;
+    }
+
+    &__bullet-list-item {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 17.6px */
+      letter-spacing: -0.16px;
+    }
+
+    &__chevron {
+      svg {
+        width: 12px;
+        height: 21px;
+      }
+    }
   }
 }

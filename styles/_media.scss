@@ -133,12 +133,12 @@
 }
 
 @media (max-width: 1440px) {
-  .header,
-  .main {
-    .wrapper {
-      max-width: 1140px;
-    }
-  }
+  // .header,
+  // .main {
+  //   .wrapper {
+  //     max-width: 1140px;
+  //   }
+  // }
   .header {
     &__wrapper {
       padding-top: 31px;
