@@ -18,6 +18,7 @@
   opacity: 0;
   transform: translateY(-100%);
   z-index: 99999;
+  overflow-y: auto;
   &--active {
     visibility: visible;
     opacity: 1;
@@ -27,6 +28,7 @@
     position: absolute;
     top: 60px;
     left: 24px;
+    @extend .header__logo-link;
   }
 
   &__logo {
@@ -109,18 +111,50 @@
 
   &__btn {
     display: inline-block;
-    
   }
-}
-.logo-image {
-}
-.company-time {
-}
-.address {
-}
-.tel-link {
-}
-.btn {
-  &_orange {
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+    padding-left: 24px;
+    padding-right: 18px;
+    padding-bottom: 56px;
+  }
+
+  @media (max-width: 375px) {
+    padding-top: 14.81px;
+    padding-right: 10px;
+    padding-left: 16px;
+    padding-bottom: 56px;
+    &__logo-link {
+      top: 14.81px;
+      left: 16px;
+    }
+    &__close-btn {
+      margin-top: 20.81px - 14.81px;
+    }
+    &__nav {
+      gap: 24px;
+      margin-bottom: 125px;
+    }
+    &__nav-link {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%; /* 17.6px */
+      letter-spacing: -0.16px;
+    }
+    &__company-time {
+      margin-bottom: 16px;
+    }
+    &__company-time,
+    &__address {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%; /* 17.6px */
+      letter-spacing: -0.16px;
+      background-size: 16px;
+      padding-left: 24px;
+    }
   }
 }

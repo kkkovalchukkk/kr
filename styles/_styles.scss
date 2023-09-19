@@ -31,6 +31,9 @@ body.no-scroll {
   @media (max-width: 567px) {
     padding: 0px 16px;
   }
+  @media (max-width: 320px) {
+    padding: 0px 10px;
+  }
 }
 
 .company-time {
@@ -391,6 +394,7 @@ body.no-scroll {
   }
 
   @media (max-width: 567px) {
+    margin-bottom: 65px;
     &__wrapper {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
@@ -401,7 +405,7 @@ body.no-scroll {
       max-width: unset;
     }
     .image-block {
-      padding: 31px;
+      padding: 26px;
       padding-left: 20px;
       padding-right: 22px;
       padding-bottom: 17px;
@@ -411,7 +415,7 @@ body.no-scroll {
         font-weight: 500;
         line-height: 108%; /* 34.56px */
         letter-spacing: -0.32px;
-        margin-bottom: 22px;
+        margin-bottom: 12px;
       }
       &__subtext {
         font-size: 16px;
@@ -420,6 +424,20 @@ body.no-scroll {
         line-height: 110%; /* 17.6px */
         letter-spacing: -0.16px;
         margin-bottom: 54px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .form {
+      padding-top: 28px;
+      padding-left: 23px;
+      padding-right: 20px;
+      &__fieldset {
+        margin-bottom: 9px;
+      }
+      &__btn {
+        padding-bottom: 16px;
       }
     }
   }
@@ -840,6 +858,15 @@ input[type='checkbox']:checked + .form__checkbox {
       padding: 10px 14px;
     }
   }
+
+  @media (max-width: 380px) {
+    .services-section__tab-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 375px) {
+    margin-top: 0;
+  }
 }
 
 .subheading {
@@ -880,6 +907,10 @@ input[type='checkbox']:checked + .form__checkbox {
 
 .advantages-section {
   margin-top: 110px;
+
+  &__mobile-block {
+    display: none;
+  }
   &__wrapper {
     flex-direction: column;
     align-items: flex-start;
@@ -914,6 +945,11 @@ input[type='checkbox']:checked + .form__checkbox {
       padding-left: 30px;
       padding-right: 30px;
       padding-bottom: 27px;
+    }
+    @media (max-width: 375px) {
+      &--mobile-hidden {
+        display: none;
+      }
     }
   }
 
@@ -1193,6 +1229,47 @@ input[type='checkbox']:checked + .form__checkbox {
     // &__box {
     //   margin-top: 97px;
     // }
+  }
+
+  @media (max-width: 375px) {
+    &__heading {
+      margin-bottom: 32px;
+    }
+    &__list {
+      margin: 10px 0px;
+      &-item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+
+    &__mobile-block {
+      width: 100%;
+      display: initial;
+      padding: 20px;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
+      color: $black;
+      leading-trim: both;
+      text-edge: cap;
+      font-family: $mainFont;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 110%; /* 17.6px */
+      letter-spacing: -0.16px;
+    }
+    &__box {
+      gap: 9px;
+      grid-template-rows: 1fr auto;
+      grid-template-columns: 1fr 1fr;
+      &-col {
+        width: 100%;
+        height: 100%;
+        gap: 16px;
+      }
+    }
   }
 }
 
@@ -1485,6 +1562,10 @@ input[type='checkbox']:checked + .form__checkbox {
     }
   }
 
+  &__mobile-box {
+    display: none;
+  }
+
   @media (max-width: 1024px) {
     margin-top: 94px;
     &__wrapper {
@@ -1664,6 +1745,55 @@ input[type='checkbox']:checked + .form__checkbox {
       }
     }
   }
+  @media (max-width: 375px) {
+    margin-top: 87px;
+    &__wrapper {
+      gap: 4px;
+    }
+    .image-block {
+      padding-bottom: 0;
+    }
+    .form {
+      &__text {
+        text-align: left;
+      }
+    }
+    &__mobile-box {
+      display: initial;
+      border-radius: 16px;
+      background: var(--white, #fff);
+      box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
+      margin-top: 8px;
+      display: initial;
+      padding: 20px;
+      padding-bottom: 19px;
+      border-radius: 16px;
+      background: var(--white, #fff);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
+      p {
+        max-width: 187px;
+        color: $black;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: $mainFont;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 108%; /* 17.28px */
+        letter-spacing: -0.16px;
+      }
+    }
+    &__mobile-socials {
+      gap: 8px;
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
 }
 
 .socials {
@@ -1715,6 +1845,17 @@ input[type='checkbox']:checked + .form__checkbox {
       circle {
         width: 40px;
         height: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__left,
+    &__right {
+      svg,
+      circle {
+        width: 32px;
+        height: 32px;
       }
     }
   }
@@ -1798,6 +1939,10 @@ input[type='checkbox']:checked + .form__checkbox {
   @media (max-width: 567px) {
     &__swiper-slide {
       max-width: 320px;
+    }
+  }
+  @media (max-width: 375px) {
+    &__mobile-btn {
     }
   }
 }
@@ -2305,7 +2450,9 @@ input[type='checkbox']:checked + .form__checkbox {
       margin-bottom: 28px;
     }
   }
-  
+
+  @media (max-width: 475px) {
+  }
 }
 
 .team-card {
@@ -2794,7 +2941,7 @@ input[type='checkbox']:checked + .form__checkbox {
     }
   }
   @media (max-width: 567px) {
-    z .image-block {
+    .image-block {
       padding: 20px;
       border-radius: 16px;
       &__text {
@@ -2937,6 +3084,9 @@ input[type='checkbox']:checked + .form__checkbox {
     }
   }
   @media (max-width: 568px) {
+    margin-top: 69px;
+  }
+  @media (max-width: 375px) {
     margin-top: 69px;
   }
 }
@@ -3105,6 +3255,12 @@ input[type='checkbox']:checked + .form__checkbox {
     &__block-list {
       display: grid !important;
       grid-template-columns: 1fr !important;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .map-holder__map {
+      height: 187px !important;
     }
   }
 }

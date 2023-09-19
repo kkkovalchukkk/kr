@@ -12,6 +12,9 @@
   @media (max-width: 625px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 375px) {
+    row-gap: 7px;
+  }
 }
 .accordeon {
   width: 100%;
@@ -33,6 +36,9 @@
       }
       @media (max-width: 568px) {
         margin-top: 20px;
+      }
+      @media (max-width: 375px) {
+        margin-top: 17px;
       }
     }
     .accordeon__chevron {
@@ -120,5 +126,10 @@
   }
   @media (max-width: 568px) {
     padding: 12px 20px;
+  }
+  @media (max-width: 375px) {
+    &__list {
+      gap: 14px;
+    }
   }
 }

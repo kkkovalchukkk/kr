@@ -92,3 +92,66 @@
     top: 88px;
   }
 }
+@media (max-width: 485px) {
+  .company-section__box-image {
+    height: 250px;
+  }
+  .company-section__heading {
+    margin-bottom: 290px;
+  }
+}
+
+@media (max-width: 375px) {
+  .company-section__box-image {
+    height: 220px;
+  }
+  .company-section__heading {
+    margin-bottom: 256px;
+  }
+  .company-section__box-image {
+    top: 100px;
+  }
+  .company-section__box-text-content {
+    gap: 16px;
+  }
+  .company-section__box-content {
+    gap: 15px;
+  }
+  .win-section__mobile-btn,
+  .reviews-section__mobile-btn,
+  .team-section__mobile-btn,
+  .materials-section__mobile-btn {
+    padding: 20px 32px;
+    margin-top: 32px !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%; /* 17.28px */
+    letter-spacing: -0.16px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header,
+  .main {
+    .wrapper {
+      max-width: 1140px;
+    }
+  }
+  .header {
+    &__wrapper {
+      padding-top: 31px;
+      padding-bottom: 30px;
+      padding-right: 18px;
+      padding-left: 20px;
+    }
+    &__btn {
+      padding: 17px 23px 16px 68px;
+      background-position: left 25px center;
+    }
+  }
+
+  .promo-section__wrapper {
+  }
+}
