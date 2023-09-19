@@ -116,6 +116,10 @@
     display: none;
   }
 
+  &__icon-link {
+    display: none;
+  }
+
   @media (max-width: 1575px) {
     &__wrapper {
       gap: 16px;
@@ -248,6 +252,22 @@
   @media (max-width: 568px) {
     &__wrapper {
       padding: 19px 20px;
+    }
+  }
+
+  @media (max-width: 567px) {
+    margin-bottom: 12px;
+    &__wrapper {
+      padding: 16px;
+    }
+    &__logo-link {
+      gap: 0.36px;
+    }
+    &__btn {
+      display: none;
+    }
+    &__icon-link {
+      display: initial;
     }
   }
 }

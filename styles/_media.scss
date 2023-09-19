@@ -70,6 +70,13 @@
       }
     }
   }
+  .socials {
+    gap: 16px;
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
   // .btn {
   //   padding: 20px 32px;
   //   font-size: 16px;
@@ -78,4 +85,10 @@
   //   line-height: 108%; /* 17.28px */
   //   letter-spacing: -0.16px;
   // }
+}
+
+@media (max-width: 522px) {
+  .company-section__box-image {
+    top: 88px;
+  }
 }
