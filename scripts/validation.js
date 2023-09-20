@@ -23,6 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    if (nameInput.value.length <= 1) {
+      nameInput.classList.add('invalid');
+    } else {
+      nameInput.classList.remove('invalid');
+    }
+
     if (telInput.value.length != 18) {
       telInput.classList.add('invalid');
     } else {
