@@ -34,6 +34,11 @@
   opacity: 0;
   visibility: hidden;
   transition: $defaultTransitionTime;
+  &--form {
+    .form {
+      padding-bottom: 91.76px;
+    }
+  }
   &--active {
     transform: translateY(0%);
     visibility: visible;
