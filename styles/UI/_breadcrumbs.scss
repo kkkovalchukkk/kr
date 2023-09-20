@@ -13,6 +13,25 @@
     font-weight: 500;
     line-height: 120%; /* 16.8px */
     letter-spacing: -0.14px;
+    &:not(:first-child) {
+      position: relative;
+      padding-left: 17px;
+      &::after {
+        content: '/';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $darkGray;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%; /* 16.8px */
+        letter-spacing: -0.14px;
+      }
+    }
   }
 
   &__link--current {
