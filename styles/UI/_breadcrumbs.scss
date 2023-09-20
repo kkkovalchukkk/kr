@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 44px;
   &__link {
     color: $darkGray;
     leading-trim: both;
@@ -35,7 +36,16 @@
     }
   }
 
+  @media (max-width: 1024px) {
+    margin-bottom: 49px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 26px;
+  }
+
   @media (max-width: 375px) {
+    margin-bottom: 32px;
     gap: 4px;
     &__link {
       font-size: 12px;
