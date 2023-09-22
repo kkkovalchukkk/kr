@@ -108,6 +108,7 @@ body.no-scroll {
   margin: 20px 0px;
   @media (max-width: 1024px) {
     margin: 10px 0px;
+    margin-bottom: 32px;
   }
   @media (max-width: 1023px) {
     margin: 0;
@@ -898,6 +899,14 @@ input[type='checkbox']:checked + .form__checkbox {
   font-weight: 500;
   line-height: 110%; /* 49.5px */
   letter-spacing: -0.45px;
+  @media (max-width: 1024px) {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108%; /* 64.8px */
+    letter-spacing: -0.6px;
+    margin-bottom: 49px;
+  }
 }
 .tab {
   background: none;
