@@ -2,12 +2,12 @@
   width: 100%;
   background-color: $white;
   padding: 0px 16px;
-  padding-top: 66px;
-  padding-bottom: 49px;
-  margin-top: 120px;
+  padding-top: 49.5px;
+  padding-bottom: 37.25px;
+  margin-top: 90px;
   &__top-footer {
     width: 100%;
-    margin-bottom: 52px;
+    margin-bottom: 45px;
   }
 
   &__logo-link {
@@ -62,7 +62,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 22px */
@@ -83,12 +83,19 @@
     }
   }
 
+  &__middle-tel-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
   &__middle-footer-col-heading {
     @extend .footer__nav-link;
     &::after {
       display: none;
     }
-    margin-bottom: 33px;
+    margin-bottom: 24px;
   }
 
   &__col-nav {
@@ -105,7 +112,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 108%; /* 17.28px */
@@ -131,17 +138,20 @@
   }
 
   &__tel-link {
-    margin-bottom: 16px;
-    font-size: 32px;
+    margin-bottom: 12px;
     &:last-child {
-      margin: 32px;
+      margin-bottom: 23px;
     }
   }
 
   &__btn {
-    padding: 16px 24px;
-    font-size: 16px;
-    letter-spacing: -0.16px;
+    padding: 12px 18px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.12px;
+    text-transform: uppercase;
   }
 
   &__info {
@@ -166,12 +176,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    gap: 20px;
+    gap: 12px;
     color: $black;
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 22px */
@@ -180,13 +190,13 @@
 
   &__socials {
     svg {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
   }
 
   &__bottom-footer {
-    margin-top: 45px;
+    margin-top: 48px;
   }
 
   &__bottom-footer-wrapper {
@@ -198,7 +208,7 @@
   &__legal {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 48px;
   }
 
   &__legal-text {
@@ -206,7 +216,7 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 108%;
@@ -242,9 +252,8 @@
     &__middle-footer-wrapper {
       flex-direction: row-reverse;
       gap: 50px;
-      max-width: 894px;
+      // max-width: 894px;
       flex-wrap: wrap;
-      margin: 0;
     }
 
     &__middle-footer-col--tels {
@@ -265,11 +274,11 @@
       order: 5;
     }
 
-    &__btn {
-      position: absolute;
-      top: 168px;
-      right: 32px;
-    }
+    // &__btn {
+    //   position: absolute;
+    //   top: 58px;
+    //   right: 131px;
+    // }
   }
   @media (max-width: 1170px) {
     &__middle-footer-wrapper {
