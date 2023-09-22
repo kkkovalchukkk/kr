@@ -1019,7 +1019,7 @@ input[type=checkbox]:checked + .form__checkbox {
 
 .tab {
   background: none;
-  padding: 15px 24px;
+  padding: 12px 20px;
   color: #0069a3;
   leading-trim: both;
   text-edge: cap;
@@ -4335,46 +4335,6 @@ input[type=checkbox].invalid + .form__checkbox {
   color: #0069a3;
   outline: 1px solid #0069a3;
 }
-@media (max-width: 1280px) {
-  .form {
-    padding: 32px;
-  }
-  .form__fieldset {
-    margin-bottom: 12px;
-  }
-  .form__btn {
-    padding: 24px 18.5px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108%; /* 17.28px */
-    letter-spacing: -0.16px;
-  }
-  .form__text {
-    max-width: 324px;
-    margin-bottom: 24px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 22px */
-    letter-spacing: -0.2px;
-  }
-  .form__label-text {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108%;
-    letter-spacing: -0.14px;
-  }
-  .form__input {
-    height: 59px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 108%;
-    letter-spacing: -0.16px;
-  }
-}
 
 .accordeon-list {
   width: 100%;
@@ -4487,7 +4447,7 @@ input[type=checkbox].invalid + .form__checkbox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 12px;
+  padding-left: 19px;
   gap: 1px;
 }
 .accordeon__bullet-list-item {
@@ -4495,11 +4455,11 @@ input[type=checkbox].invalid + .form__checkbox {
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110%; /* 22px */
-  letter-spacing: -0.2px;
+  line-height: 110%; /* 16.5px */
+  letter-spacing: -0.15px;
   position: relative;
   padding-left: 20px;
 }
@@ -4507,7 +4467,7 @@ input[type=checkbox].invalid + .form__checkbox {
   content: "•";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -4px;
   color: #999999;
   leading-trim: both;
   text-edge: cap;
@@ -5022,13 +4982,17 @@ input[type=checkbox].invalid + .form__checkbox {
   }
 }
 
+.request-section--faq {
+  margin-top: 89px;
+}
+
 .faq-section {
   width: 100%;
 }
 .faq-section__wrapper {
   display: grid;
   align-items: start;
-  gap: 20px;
+  gap: 15px;
   grid-template-columns: 74.68% 24.04%;
 }
 .faq-section__content {
@@ -5036,9 +5000,9 @@ input[type=checkbox].invalid + .form__checkbox {
   border-radius: 24px;
   background: #fff;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
-  padding: 48px;
-  padding-right: 64px;
-  padding-bottom: 33px;
+  padding: 36px;
+  padding-right: 48px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -5049,7 +5013,7 @@ input[type=checkbox].invalid + .form__checkbox {
 }
 .faq-section__tab-list {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
   align-items: center;
   gap: 20px;
 }
@@ -5058,7 +5022,7 @@ input[type=checkbox].invalid + .form__checkbox {
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 19.2px */
@@ -5070,21 +5034,21 @@ input[type=checkbox].invalid + .form__checkbox {
   align-items: flex-start;
   justify-content: start;
   flex-wrap: wrap;
-  max-width: 997px;
+  max-width: 748px;
   -moz-column-gap: 16px;
        column-gap: 16px;
-  row-gap: 8px;
+  row-gap: 16px;
 }
 .faq-section__page-link {
   color: #999999;
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 24px */
-  letter-spacing: -0.2px;
+  line-height: 120%; /* 18px */
+  letter-spacing: -0.15px;
 }
 .faq-section__page-link--active {
   color: #0069a3;
@@ -5098,20 +5062,20 @@ input[type=checkbox].invalid + .form__checkbox {
 .faq-section__accordeon {
   border-radius: 20px;
   border: 1px solid var(--gray, #eaeaea);
-  padding-left: 40px;
-  padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 28px;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .faq-section__accordeon.accordeon--active .accordeon__content {
-  margin-top: 22px;
+  margin-top: 24px;
 }
 .faq-section__accordeon .accordeon__heading {
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%; /* 24px */
-  letter-spacing: -0.2px;
+  line-height: 120%; /* 18px */
+  letter-spacing: -0.15px;
 }
 .faq-section__sidebar {
   width: 100%;
@@ -5122,10 +5086,8 @@ input[type=checkbox].invalid + .form__checkbox {
   gap: 20px;
 }
 .faq-section__form {
-  padding-top: 34px;
-  padding-left: 46px;
-  padding-bottom: 61px;
-  padding-right: 36px;
+  padding: 31px;
+  padding-bottom: 43px;
 }
 .faq-section__form .form__text {
   color: #13151c;
@@ -5134,11 +5096,12 @@ input[type=checkbox].invalid + .form__checkbox {
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 110%; /* 26.4px */
-  letter-spacing: -0.24px;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.18px;
+  margin-bottom: 23px;
 }
 .faq-section__form .form__text:first-child {
   max-width: 256px;
@@ -5148,27 +5111,25 @@ input[type=checkbox].invalid + .form__checkbox {
   color: #ee4b28;
 }
 .faq-section__block {
-  padding-top: 39px;
-  padding-right: 40px;
-  padding-bottom: 29px;
-  padding-left: 45px;
+  padding: 30px;
+  padding-right: 36px;
   border-radius: 24px;
   background: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-  gap: 32px;
+  gap: 23px;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.04);
   color: #13151c;
   leading-trim: both;
   text-edge: cap;
   font-family: "Lato", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 110%; /* 26.4px */
-  letter-spacing: -0.24px;
+  line-height: 110%; /* 19.8px */
+  letter-spacing: -0.18px;
 }
 .faq-section__socials {
   gap: 16px;
@@ -5331,15 +5292,13 @@ input[type=checkbox].invalid + .form__checkbox {
 }
 .practice-section__tab-list {
   width: 100%;
-  max-width: 1470px;
-  margin-bottom: 64px;
+  max-width: 1103px;
+  margin-bottom: 47px;
   display: flex;
   align-items: flex-start;
   justify-content: start;
   flex-wrap: wrap;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 14px;
+  gap: 15px;
 }
 .practice-section__card-list {
   width: 100%;
@@ -5360,15 +5319,6 @@ input[type=checkbox].invalid + .form__checkbox {
 @media (max-width: 1024px) {
   .practice-section__card-list {
     row-gap: 55px;
-  }
-  .practice-section .tab {
-    padding: 14px 24px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%; /* 17.6px */
-    letter-spacing: -0.16px;
-    border-radius: 100px;
   }
   .practice-section__tab-list {
     margin-bottom: 41px;
@@ -5521,11 +5471,19 @@ input[type=checkbox].invalid + .form__checkbox {
   justify-content: space-between;
   gap: 16px;
 }
+@media (max-width: 568px) {
+  .case-section__row {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+}
 .case-section__time {
   background-position: left top;
 }
 .case-section__tags-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
 }
@@ -5617,6 +5575,12 @@ input[type=checkbox].invalid + .form__checkbox {
   font-weight: 500;
   line-height: 110%; /* 16.5px */
   letter-spacing: -0.15px;
+}
+@media (max-width: 1024px) {
+  .case-section__group {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 1024px) {

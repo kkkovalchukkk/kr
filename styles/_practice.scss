@@ -12,14 +12,13 @@
 
   &__tab-list {
     width: 100%;
-    max-width: 1470px;
-    margin-bottom: 64px;
+    max-width: 1103px;
+    margin-bottom: 47px;
     display: flex;
     align-items: flex-start;
     justify-content: start;
     flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 14px;
+    gap: 15px;
   }
 
   &__card-list {
@@ -43,15 +42,6 @@
   @media (max-width: 1024px) {
     &__card-list {
       row-gap: 55px;
-    }
-    .tab {
-      padding: 14px 24px;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 110%; /* 17.6px */
-      letter-spacing: -0.16px;
-      border-radius: 100px;
     }
     &__tab-list {
       margin-bottom: 41px;

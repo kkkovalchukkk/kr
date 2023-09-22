@@ -24,6 +24,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    @media (max-width: 568px) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: start;
+    }
   }
 
   &__time {
@@ -33,6 +38,7 @@
 
   &__tags-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 6px;
   }
@@ -135,5 +141,12 @@
     font-weight: 500;
     line-height: 110%; /* 16.5px */
     letter-spacing: -0.15px;
+  }
+
+  @media (max-width: 1024px) {
+    &__group {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
   }
 }
